@@ -1,49 +1,165 @@
-/*////////////////////////////////////////////////////////////////////////
-Table of Contents:
-    1. Global Styles
-    2. Typografie
-    3. Areas
-        3.1 Header
-        3.2 Testimonial
-        3.3 Support
-        3.4 Faq
-        3.5 Footer
-////////////////////////////////////////////////////////////////////////*/
-
-
-
-/*////////////////////////
-    1. Global Styles
-////////////////////////*/
-
-
-
-/*////////////////////////
-    2. Typography
-////////////////////////*/
-
-
-
-/*////////////////////////
-    3. Areas
-////////////////////////*/
-
-
-
-/*///////////// 3.1 Header /////////////*/
-
-
-
-/*///////////// 3.2 Testimonial /////////////*/
-
-
-
-/*///////////// 3.3 Support /////////////*/
-
-
-
-/*///////////// 3.4 Faq /////////////*/
-
-
-
-/*///////////// 3.5 Footer /////////////*/
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Color scheme */
+  :root {
+    --grey: #899CA0;
+    --dark-green: #1C2B32;
+  }
+  
+  /* Font */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  
+  html,
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Header */
+  header {
+    background-image: url('mountains.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+    margin-bottom: 50px;
+  }
+  
+  .header-group {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .header-title {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .header-text {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+  }
+  
+  .header-form {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header-input {
+    border-radius: 20px 0 0 20px;
+    border: 2px solid var(--grey);
+    padding: 10px;
+    font-size: 1.1rem;
+    width: 60%;
+  }
+  
+  .header-button {
+    border-radius: 0 20px 20px 0;
+    background-color: var(--dark-green);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    margin-left: -2px;
+    cursor: pointer;
+  }
+  
+  /* Main */
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .main-section {
+    margin-bottom: 50px;
+  }
+  
+  .main-section-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .main-section-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .main-section-link {
+    color: var(--grey);
+    text-decoration: underline;
+  }
+  
+  .main-section-link:hover {
+    color: var(--dark-green);
+    text-decoration: none;
+  }
+  
+  .main-section-button {
+    background-color: var(--dark-green);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  /* FAQ */
+  .faq-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .faq-list {
+    list-style: none;
+    margin-bottom: 50px;
+  }
+  
+  .faq-item {
+    border: 2px solid var(--grey);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .faq-question {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .faq-answer {
+    font-size: 1.1rem;
+    display: none;
+  }
+  
+  .faq-item.active .faq-answer {
+    display: block;
+  }
+  
+  .faq-item:hover {
+    border-color: var(--dark-green);
+  }
+  
+  .faq-item:hover .faq-question {
+    color: var(--dark-green);
+  }
+  
+  .faq-item:hover .faq-answer {
+    color: var(--dark-green);
+  }
+  
+  .faq-item:hover {
+    cursor: pointer;
+  }
+  
+  /* Testimonials */
+  .testimonials-title {
+    font-size: 17px;
+  }  
